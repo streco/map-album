@@ -1,3 +1,6 @@
+## Overview
+An application that shows photos from your Google Photo Albums in a map view.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
