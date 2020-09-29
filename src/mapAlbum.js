@@ -3,6 +3,12 @@ import mapboxgl from 'mapbox-gl';
 import { MAPBOX_ACCESS_TOKEN } from './config';
 import AWS from 'aws-sdk';
 
+import { Alert } from "shards-react";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "shards-ui/dist/css/shards.min.css"
+
+
 mapboxgl.accessToken = MAPBOX_ACCESS_TOKEN;
 
 /*
@@ -66,11 +72,17 @@ class MapAlbum extends React.Component {
     }
 
    
-
+    //Map needs to be commented out to show alert
     render() {
         return (
             <div>
-                <div ref={el => this.mapContainer = el} className="mapContainer" />
+                <Alert theme="primary">
+                    Alert - Primary Theme (default) -{" "}
+                    <a className="alert-link" href="#">
+                    Example Link
+                    </a>
+                </Alert>
+                <div ref={el => this.mapContainer = el} className="mapContainer" /> 
             </div>
         )
     }
